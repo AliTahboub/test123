@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.mysoap'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-web-services'
+    implementation 'wsdl4j:wsdl4j'
+    jaxb 'org.glassfish.jaxb:jaxb-xjc'
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+}
+
+
+test {
+    useJUnitPlatform()
+}
